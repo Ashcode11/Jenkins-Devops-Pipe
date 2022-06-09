@@ -1,41 +1,22 @@
-//SCRIPTED
-//node {
-//	stage('Build') {
-//		echo "Build"
-//	}
-//	stage('Test') {
-//		echo "Test"
-//	}
-//	stage('Integration Test') {
-//		echo "Test"
-//	}
-//}
-
-//node {
-//		echo "Build"
-//		echo "Test"
-//		echo "Integration Test"
-//	
-//}
-
-//DECLARATIVE PIPELINE
-
 pipeline {
 	agent any
 	stages {
 		stage('Build') {
 			steps {
-			echo "Build 2"
-         	}
+			echo "Build"
+         	
+			}
 		}
-			stage('Test') {
+				stage('Test') {
 			steps {
-			 	echo "Test 2"
-		    			}
+					echo "Test"
+			       	
+			}
 		}
-			stage('Integration Test') {
+				stage('Integration Test') {
 			steps {
-		    echo "Integration Test 2"
+				echo "Integration Test"
+         	
 			}
 		}
 	}
